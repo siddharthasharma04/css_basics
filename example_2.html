@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PARALLAX</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 2000px;
+        background-color: #0a2a43;
+        font-family: Helvetica, sans-serif;
+        color: #fff;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      section::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100px;
+        width: 100%;
+        background: linear-gradient(to top, #0a2a43, transparent);
+        z-index: 15;
+      }
+      section::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #0a2a43;
+        mix-blend-mode: color;
+        z-index: 15;
+      }
+      section {
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+      }
+      section h1,
+      section img {
+        position: absolute;
+      }
+      .sky {
+        z-index: 1;
+        height: 100%;
+        object-fit: cover;
+        min-width: 100%;
+      }
+      .moon {
+        max-width: 150px;
+        right: 20px;
+        top: 5%;
+        z-index: 5;
+      }
+      .mountain {
+        width: 100%;
+        bottom: 0%;
+        left: 0;
+        z-index: 6;
+      }
+      .hut {
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        z-index: 10;
+      }
+      .heading {
+        z-index: 7;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 5rem;
+        
+        text-align: center;
+        text-shadow: 2px 1px 5px #192c42;
+      }
+      main{
+          max-width: 1024px;
+          margin: 0 auto;
+          font-size: 18px;
+          padding: 100px 25px;
+          line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section>
+        <img src="images/sky.jpg" class="sky" alt="SKY" />
+        <img src="images/moon.png" class="moon" alt="Moon" />
+        <img src="images/mountain.png" class="mountain" alt="MOUNTAIN" />
+        <img src="images/hut.png" class="hut" alt="HUT" />
+        <h1 class="heading">WHITE NIGHT MOON</h1>
+      </section>
+      <main>
+          <h2>
+              Parallx Effect
+          </h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+          cupiditate maiores excepturi illo odit cumque molestias ab nesciunt
+          sapiente? Quaerat, omnis enim. Fugiat sit, voluptas corrupti rerum
+          excepturi ab nesciunt.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
+          maiores dolorem placeat explicabo, cupiditate dolorum officiis
+          perspiciatis fuga quod blanditiis excepturi beatae quia. Culpa, beatae
+          voluptates! Error eveniet tenetur nemo.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias minima
+          quis hic ipsum a obcaecati, nam, enim est, corporis in libero
+          voluptates. Temporibus ipsum totam tempore hic consequatur, molestias
+          sed.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+          corporis nesciunt quibusdam facilis distinctio officia ducimus vitae
+          neque harum, consectetur fuga illum, eum quis commodi cum eaque.
+          Commodi, aut aliquam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+          corporis nesciunt quibusdam facilis distinctio officia ducimus vitae
+          neque harum, consectetur fuga illum, eum quis commodi cum eaque.
+          Commodi, aut aliquam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+          corporis nesciunt quibusdam facilis distinctio officia ducimus vitae
+          neque harum, consectetur fuga illum, eum quis commodi cum eaque.
+          Commodi, aut aliquam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+          corporis nesciunt quibusdam facilis distinctio officia ducimus vitae
+          neque harum, consectetur fuga illum, eum quis commodi cum eaque.
+          Commodi, aut aliquam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+          corporis nesciunt quibusdam facilis distinctio officia ducimus vitae
+          neque harum, consectetur fuga illum, eum quis commodi cum eaque.
+          Commodi, aut aliquam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+          corporis nesciunt quibusdam facilis distinctio officia ducimus vitae
+          neque harum, consectetur fuga illum, eum quis commodi cum eaque.
+          Commodi, aut aliquam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+          corporis nesciunt quibusdam facilis distinctio officia ducimus vitae
+          neque harum, consectetur fuga illum, eum quis commodi cum eaque.
+          Commodi, aut aliquam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+          corporis nesciunt quibusdam facilis distinctio officia ducimus vitae
+          neque harum, consectetur fuga illum, eum quis commodi cum eaque.
+          Commodi, aut aliquam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+          corporis nesciunt quibusdam facilis distinctio officia ducimus vitae
+          neque harum, consectetur fuga illum, eum quis commodi cum eaque.
+          Commodi, aut aliquam.
+        </p>
+      </main>
+    </div>
+    <script>
+      var moon = document.getElementsByClassName("moon")[0];
+      var sky = document.getElementsByClassName("sky")[0];
+      var mountain = document.getElementsByClassName("mountain")[0];
+      var hut = document.getElementsByClassName("hut")[0];
+      var heading = document.getElementsByClassName("heading")[0];
+      window.addEventListener("scroll", function (e) {
+        const val = window.scrollY;
+
+        sky.style.top = val * 0.5 + "px";
+        moon.style.right = val * 0.5 + 20 + "px";
+        mountain.style.bottom = val * 0.25 + "px";
+        // hut.style.bottom = -val * 0.15  + "px";
+        heading.style.top = val * 0.05 + 25 + "%";
+      });
+    </script>
+  </body>
+</html>
