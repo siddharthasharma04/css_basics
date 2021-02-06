@@ -2,7 +2,7 @@
 
 ### Home
 
- - [**Example 1**](https://siddharthasharma04.github.io/css_basics/)
+ - [**Home**](https://siddharthasharma04.github.io/css_basics/)
  
  ### Heart Pop-in
 
